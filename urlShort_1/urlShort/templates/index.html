@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="urlInput">Enter URL:</label>
+        <input type="text" id="urlInput" name="url" required>
+        <input type="submit" value="Shorten URL">
+    </form>
+
+    <div id="shortenedUrls">
+        {% for url in data %}
+            <div class="shortened-url">
+                <p><strong>Original URL:</strong> {{ url.url }}</p>
+                <p><strong>Shortened URL:</strong> <a href="{{ request.build_absolute_uri('/') }}{{ url.slug }}">{{ request.build_absolute_uri('/') }}{{ url.slug }}</a></p>
+            </div>
+        {% empty %}
+            <p>No URLs shortened yet.</p>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
