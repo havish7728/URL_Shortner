@@ -13,8 +13,7 @@ A simple Django application for shortening URLs and redirecting to original link
 
 - Django
 - Python
-- HTML/CSS
-- JavaScript
+- HTML
 
 ## Installation
 
