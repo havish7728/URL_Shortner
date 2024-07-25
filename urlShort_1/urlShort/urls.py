@@ -2,6 +2,7 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    path('', views.urlShort, name='url_shorten'),  # Corrected path for urlShort view
-    path('<slug:slugs>/', views.urlRedirect, name='url_redirect'),  # Corrected path for urlRedirect view
+    path('', views.url_shorten, name='url_shorten'),
+    path('shorten/',views.shorten_success,name='shorten_success'),
+    path('<slug>/', views.url_redirect, name='url_redirect')
 ]
