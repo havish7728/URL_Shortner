@@ -41,14 +41,3 @@ python manage.py runserver
 1. Open the application in your web browser.
 2. Enter a URL in the input field and click "Shorten URL".
 3. Copy the shortened URL provided and use it as needed.
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/add-new-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature/add-new-feature`).
-6. Create a new Pull Request.
