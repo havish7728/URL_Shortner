@@ -6,7 +6,6 @@ A simple Django application for shortening URLs and redirecting to original link
 
 - URL shortening functionality.
 - Redirecting shortened URLs to original links.
-- Copy to clipboard option for shortened URLs.
 - Displaying and managing shortened URLs.
 
 ## Technologies Used
